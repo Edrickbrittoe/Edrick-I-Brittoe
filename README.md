@@ -6,7 +6,7 @@ Data Analyst with an MBA in AI & Data Science (SRM IST, 9.1 CGPA). I build Power
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-edrick--brittoe-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/edrick-brittoe-54687228a)
 [![Email](https://img.shields.io/badge/email-edrickbrittoe%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:edrickbrittoe@gmail.com)
 
-[Projects](#projects) · [Experience](#experience) · [Skills](#skills) · [Run locally](#run-locally) · [Contact](#contact)
+[Projects](#projects) · [Experience](#experience) · [Skills](#skills) · [How it works](#how-it-works) · [Contact](#contact)
 
 This repo is the source of my portfolio: **[edrickbrittoe.github.io/Edrick-I-Brittoe](https://edrickbrittoe.github.io/Edrick-I-Brittoe/)**
 
@@ -89,17 +89,23 @@ Power BI dashboard covering 500+ matches and 100+ player metrics over 5 seasons.
 - Power BI for Beginners, Simplilearn SkillUp
 - Effective Leadership, HP LIFE
 
-## Run locally
+## How it works
 
-The site is a single `index.html` with Tailwind (CDN) and vanilla JavaScript, so there is nothing to build.
+The site is a single `index.html`. All content sits in one `PORTFOLIO_DATA` object and the page renders itself from it, so updating the site means editing that object.
 
-```bash
-git clone https://github.com/Edrickbrittoe/Edrick-I-Brittoe.git
-cd Edrick-I-Brittoe
-python3 -m http.server 8000
+```mermaid
+flowchart LR
+    A["PORTFOLIO_DATA<br/>(single JS object)"] --> B["DOM render functions"]
+    B --> C["Metrics strip"]
+    B --> D["Projects index"]
+    B --> E["Experience & Education"]
+    B --> F["Skills matrix"]
+    B --> G["Certifications"]
+    D --> H["Case-study modal"]
+    D --> I["Hover preview"]
 ```
 
-Open http://localhost:8000. To change the content, edit the `PORTFOLIO_DATA` object in `index.html`.
+Built with HTML, Tailwind CSS (CDN) and vanilla JavaScript.
 
 ## Contact
 
