@@ -43,7 +43,7 @@ This is the source code of my personal portfolio, a single-page site in an **edi
 
 I completed my **MBA in Artificial Intelligence & Data Science (9.1 CGPA)** at SRM IST and work with **Power BI, SQL, Python, and predictive analytics** to build decision-grade dashboards and find high-impact growth levers.
 
-🌐 **Live site:** [YOUR-LIVE-URL-HERE](https://YOUR-LIVE-URL-HERE)
+🌐 **Live site:** https://edrickbrittoe.github.io/Edrick-I-Brittoe/
 
 ---
 
